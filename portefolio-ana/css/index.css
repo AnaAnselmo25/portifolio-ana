@@ -1,0 +1,164 @@
+/* ===== Estilos comuns (iguais nas 4 páginas) =====
+   Cores: ouro #d1a85f | fundo #070b0a | texto #ece6da | cinza-verde #9fb0a9 */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background-color: #070b0a;
+  color: #ece6da;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a { color: #d1a85f; }
+
+/* Topo com logótipo e menu */
+.topo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 50px;
+  border-bottom: 1px solid #22332e;
+}
+
+.logo {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  border: 1px solid #d1a85f;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 44px;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 20px;
+  color: #d1a85f;
+  text-decoration: none;
+}
+
+.menu a {
+  margin-left: 24px;
+  padding-bottom: 4px;
+  color: #9fb0a9;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.menu a:hover,
+.menu a.ativo {
+  color: #ece6da;
+  border-bottom: 2px solid #d1a85f;
+}
+
+/* Botão dourado */
+.botao {
+  display: inline-block;
+  background-color: #d1a85f;
+  color: #070b0a;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 40px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.botao:hover { background-color: #ecc98a; }
+
+/* Secções e títulos */
+.secao {
+  padding: 60px 50px;
+  border-top: 1px solid #22332e;
+}
+
+.etiqueta {
+  margin: 0 0 12px 0;
+  color: #d1a85f;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 4px;
+}
+
+.titulo {
+  margin: 0 0 20px 0;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-size: 44px;
+  line-height: 1.15;
+}
+
+.titulo i { color: #d1a85f; }
+
+.suave { color: #9fb0a9; }
+
+/* Rodapé */
+footer {
+  padding: 26px 50px;
+  border-top: 1px solid #22332e;
+  text-align: center;
+  font-size: 13px;
+  color: #9fb0a9;
+}
+
+/* ===== Página Início ===== */
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 50px;
+  background-color: #0a1210;
+}
+
+.hero-texto { max-width: 520px; }
+
+.hero h1 {
+  margin: 0 0 20px 0;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-size: 90px;
+  line-height: 1;
+}
+
+.hero h1 i { color: #d1a85f; }
+
+.hero p { font-size: 18px; }
+
+/* Fotografia em forma de arco */
+.foto {
+  width: 340px;
+  height: 450px;
+  object-fit: cover;
+  border: 1px solid #d1a85f;
+  border-radius: 170px 170px 16px 16px;
+}
+
+/* Faixa dourada final */
+.chamada {
+  margin: 0 50px 60px 50px;
+  padding: 50px;
+  background-color: #d1a85f;
+  color: #070b0a;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.chamada h2 {
+  margin: 0 0 20px 0;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-size: 36px;
+}
+
+.chamada .botao {
+  background-color: #070b0a;
+  color: #ece6da;
+}
